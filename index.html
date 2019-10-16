@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Team-Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<style>
+    * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.team-wrapper {
+    background: #DDE8E8;
+}
+
+.team-header {
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    line-height: 87px;
+    color: #000000;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+
+}
+
+.team-header:after {
+    content: "";
+    position: absolute;
+    border-top: 6px solid black;
+    left: 46%;
+    bottom: 10px;
+    margin-left: -10px;
+    width: 110px;
+    height: 0;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 550px) {
+    .team-header {
+        font-size: 30px;
+    }
+
+    .team-header:after {
+        left: 49%;
+        bottom: 10px;
+        margin-left: -40px;
+        width: 80px;
+        height: 0;
+        border-radius: 5px;
+    }
+}
+
+.col-lg-4,
+.default-margin {
+    margin-bottom: 2rem;
+}
+
+.primary-card {
+    height: 100%;
+
+}
+
+.card-text {
+    overflow-wrap: break-word;
+    max-height: 100%;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    max-height: 250px;
+    text-align: center;
+    margin-top: 10%;
+    z-index: 1;
+}
+
+.img-size {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+
+}
+
+.card-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.image-slant:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    background: #CAC9D9;
+    transform-origin: 100% 0;
+    transform: skew(-65deg);
+    z-index: 1;
+}
+
+.contact-title {
+    font-size: 24px;
+    font-size: bold;
+    text-transform: capitalize;
+
+}
+
+.btn-default {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #060541;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    outline: 0;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.btn-default:hover {
+    color: #060541;
+    background: #fff;
+    border: 1px solid #060541;
+}
+
+.btn-default:focus {
+    box-shadow: none;
+}
+
+.social-media {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.icon {
+    width: 40px;
+    height: 40px;
+    padding-left: 10px;
+    margin: 0 20px;
+}
+@media only screen and (max-width: 550px) {
+    .social-media {
+        display: flex;
+    }
+    .icon {
+        margin: 0 18px;
+    }
+    
+}
+</style>
+<body>
+    <!-- team-wrapper -->
+    <div class="team-wrapper ">
+        <div class="container">
+            <!-- team header -->
+            <h2 class="team-header">meet our team</h2>
+            <!-- end of team header -->
+            <!-- card body -->
+            <div class="row">
+                <!-- text -->
+                <div class="col col-lg-4 col-md-6 col-sm-4 ">
+                    <div class="card primary-card" style="width: 100%;">
+                        <div class="container card-wrapper">
+                            <!-- image slant  -->
+                            <div class="image-slant"></div>
+                            <!-- end of image slant -->
+                            <div class="image-container">
+                                <img src="assets/image/person_3.jpg" class="card-img-top img-size" alt="...">
+                            </div>
+                            <div class="card-body text-center" style="max-height: 100%">
+                                <h2 class="card-title contact-title">ositu hng</h2>
+                                <h6 class="text">frontend developer</h6>
+                                <p class="card-text">Some card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                            <div class="text-center default-margin">
+                                <a href="#" class="btn btn-default">contact</a>
+                            </div>
+                        </div>
+                        <div class="social-media">
+                            <div class="">
+                                <a href="https://twitter.com">
+                                    <img class="icon"
+                                        src="https://res.cloudinary.com/maphorbs/image/upload/v1571191391/twitter_rkr1yl.png"
+                                        alt="Twitter">
+                                </a>
+                                <a href="https://www.instagram.com"><img class="icon"
+                                        src="https://res.cloudinary.com/maphorbs/image/upload/v1571191627/download_o5sg95.jpg"
+                                        alt="Instagram"></a>
+                                <a href="https://www.linkedin.com"><img class="icon"
+                                        src="https://res.cloudinary.com/maphorbs/image/upload/v1571191609/download_b1sxbe.png"
+                                        alt="LinkedIn"></a>
+                                <a href="https://mail.google.com"><img class="icon"
+                                        src="https://res.cloudinary.com/maphorbs/image/upload/v1571191349/google-plus_qrojck.png"
+                                        alt="Google"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-4 col-md-6 col-sm-4 ">
+                    <div class="card primary-card" style="width: 100%;">
+
+                        <div class="container card-wrapper">
+                            <!-- image slant  -->
+                            <div class="image-slant"></div>
+                            <!-- end of image slant -->
+                            <div class="image-container">
+                                <img src="assets/image/person_3.jpg" class="card-img-top img-size" alt="...">
+                            </div>
+                            <div class="card-body text-center" style="max-height: 100%">
+                                <h2 class="card-title contact-title">ositu hng</h2>
+                                <h6 class="text">frontend developer</h6>
+                                <p class="card-text">Some card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                            <div class="text-center default-margin">
+                                <a href="#" class="btn btn-default">contact</a>
+                            </div>
+                        </div>
+                        <div class="social-media">
+                            <div class="">
+                                <a href="https://twitter.com">
+                                    <img class="icon"
+                                        src="https://res.cloudinary.com/maphorbs/image/upload/v1571191391/twitter_rkr1yl.png"
+                                        alt="Twitter">
+                                </a>
+                                <a href="https://www.instagram.com"><img class="icon"
+                                        src="https://res.cloudinary.com/maphorbs/image/upload/v1571191627/download_o5sg95.jpg"
+                                        alt="Instagram"></a>
+                                <a href="https://www.linkedin.com"><img class="icon"
+                                        src="https://res.cloudinary.com/maphorbs/image/upload/v1571191609/download_b1sxbe.png"
+                                        alt="LinkedIn"></a>
+                                <a href="https://mail.google.com"><img class="icon"
+                                        src="https://res.cloudinary.com/maphorbs/image/upload/v1571191349/google-plus_qrojck.png"
+                                        alt="Google"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col  col-lg-4 col-md-6 col-sm-4 ">
+                    <div class="card primary-card" style="width: 100%;">
+
+                        <div class="container card-wrapper">
+                            <!-- image slant  -->
+                            <div class="image-slant"></div>
+                            <!-- end of image slant -->
+                            <div class="image-container">
+                                <img src="assets/image/person_3.jpg" class="card-img-top img-size" alt="...">
+                            </div>
+                            <div class="card-body text-center" style="max-height: 100%">
+                                <h2 class="card-title contact-title">ositu hng</h2>
+                                <h6 class="text">frontend developer</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+
+                            </div>
+                            <div class="text-center default-margin">
+                                <a href="#" class="btn btn-default">contact</a>
+                            </div>
+                        </div>
+                        <div class="social-media">
+                            <div class="">
+                                <a href="https://twitter.com">
+                                    <img class="icon"
+                                        src="https://res.cloudinary.com/maphorbs/image/upload/v1571191391/twitter_rkr1yl.png"
+                                        alt="Twitter">
+                                </a>
+                                <a href="https://www.instagram.com"><img class="icon"
+                                        src="https://res.cloudinary.com/maphorbs/image/upload/v1571191627/download_o5sg95.jpg"
+                                        alt="Instagram"></a>
+                                <a href="https://www.linkedin.com"><img class="icon"
+                                        src="https://res.cloudinary.com/maphorbs/image/upload/v1571191609/download_b1sxbe.png"
+                                        alt="LinkedIn"></a>
+                                <a href="https://mail.google.com"><img class="icon"
+                                        src="https://res.cloudinary.com/maphorbs/image/upload/v1571191349/google-plus_qrojck.png"
+                                        alt="Google"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-4 col-md-6 col-sm-4 ">
+                    <div class="card primary-card" style="width: 100%;">
+
+                        <div class="container card-wrapper">
+                            <!-- image slant  -->
+                            <div class="image-slant"></div>
+                            <!-- end of image slant -->
+                            <div class="image-container">
+                                <img src="assets/image/person_3.jpg" class="card-img-top img-size" alt="...">
+                            </div>
+                            <div class="card-body text-center" style="max-height: 100%">
+                                <h2 class="card-title contact-title">ositu hng</h2>
+                                <h6 class="text">frontend developer</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+
+                            </div>
+                            <div class="text-center default-margin">
+                                <a href="#" class="btn btn-default">contact</a>
+                            </div>
+                        </div>
+                        <div class="social-media">
+                            <div class="">
+                                <a href="https://twitter.com">
+                                    <img class="icon"
+                                        src="https://res.cloudinary.com/maphorbs/image/upload/v1571191391/twitter_rkr1yl.png"
+                                        alt="Twitter">
+                                </a>
+                                <a href="https://www.instagram.com"><img class="icon"
+                                        src="https://res.cloudinary.com/maphorbs/image/upload/v1571191627/download_o5sg95.jpg"
+                                        alt="Instagram"></a>
+                                <a href="https://www.linkedin.com"><img class="icon"
+                                        src="https://res.cloudinary.com/maphorbs/image/upload/v1571191609/download_b1sxbe.png"
+                                        alt="LinkedIn"></a>
+                                <a href="https://mail.google.com"><img class="icon"
+                                        src="https://res.cloudinary.com/maphorbs/image/upload/v1571191349/google-plus_qrojck.png"
+                                        alt="Google"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col  col-lg-4 col-md-6 col-sm-4 ">
+                    <div class="card primary-card" style="width: 100%;">
+                        <div class="container card-wrapper">
+                            <!-- image slant  -->
+                            <div class="image-slant"></div>
+                            <!-- end of image slant -->
+                            <div class="image-container">
+                                <img src="assets/image/person_3.jpg" class="card-img-top img-size" alt="...">
+                            </div>
+                            <div class="card-body text-center" style="max-height: 100%">
+                                <h2 class="card-title contact-title">ositu hng</h2>
+                                <h6 class="text">frontend developer</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+
+                            </div>
+                            <div class="text-center default-margin">
+                                <a href="#" class="btn btn-default">contact</a>
+                            </div>
+                        </div>
+                        <div class="social-media">
+                            <div class="">
+                                <a href="https://twitter.com">
+                                    <img class="icon"
+                                        src="https://res.cloudinary.com/maphorbs/image/upload/v1571191391/twitter_rkr1yl.png"
+                                        alt="Twitter">
+                                </a>
+                                <a href="https://www.instagram.com"><img class="icon"
+                                        src="https://res.cloudinary.com/maphorbs/image/upload/v1571191627/download_o5sg95.jpg"
+                                        alt="Instagram"></a>
+                                <a href="https://www.linkedin.com"><img class="icon"
+                                        src="https://res.cloudinary.com/maphorbs/image/upload/v1571191609/download_b1sxbe.png"
+                                        alt="LinkedIn"></a>
+                                <a href="https://mail.google.com"><img class="icon"
+                                        src="https://res.cloudinary.com/maphorbs/image/upload/v1571191349/google-plus_qrojck.png"
+                                        alt="Google"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-4 col-md-6 col-sm-4 ">
+                    <div class="card primary-card" style="width:100%;">
+
+                        <div class="container card-wrapper">
+                            <!-- image slant  -->
+                            <div class="image-slant"></div>
+                            <!-- end of image slant -->
+                            <div class="image-container">
+                                <img src="assets/image/person_3.jpg" class="card-img-top img-size" alt="...">
+                            </div>
+                            <div class="card-body text-center" style="max-height: 100%">
+                                <h2 class="card-title contact-title">Hng dev</h2>
+                                <h6 class="text">frontend developer</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+
+                            </div>
+                            <div class="text-center default-margin">
+                                <a href="#" class="btn btn-default">contact</a>
+                            </div>
+                        </div>
+                        <div class="social-media">
+                            <div class="">
+                                <a href="https://twitter.com">
+                                    <img class="icon"
+                                        src="https://res.cloudinary.com/maphorbs/image/upload/v1571191391/twitter_rkr1yl.png"
+                                        alt="Twitter">
+                                </a>
+                                <a href="https://www.instagram.com"><img class="icon"
+                                        src="https://res.cloudinary.com/maphorbs/image/upload/v1571191627/download_o5sg95.jpg"
+                                        alt="Instagram"></a>
+                                <a href="https://www.linkedin.com"><img class="icon"
+                                        src="https://res.cloudinary.com/maphorbs/image/upload/v1571191609/download_b1sxbe.png"
+                                        alt="LinkedIn"></a>
+                                <a href="https://mail.google.com"><img class="icon"
+                                        src="https://res.cloudinary.com/maphorbs/image/upload/v1571191349/google-plus_qrojck.png"
+                                        alt="Google"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of card body -->
+    </div>
+    </div>
+    <!-- end of team-wrapper -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
